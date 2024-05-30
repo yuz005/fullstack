@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>video_source</title>
+  </head>
+  <body>
+    <!-- controls안하면 autoplay로 바로 사용할수 있으나
+    실무에서는 muted를 해줘야함(사람들 놀랏던 경우가 많아서 뮤트를 해야 정상 작동하도록 해야함) -->
+    <video controls="controls" style="width: 400px">
+      <source src="Wildlife.mp4" type="video/mp4" />
+      <source src="Wildlife.webm" type="viodeo/webm" />
+    </video>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      table {
+        width: 280px;
+        height: 550px;
+        margin: auto;
+      }
+      .email {
+        width: 127px;
+        height: 32px;
+        font-size: 15px;
+        border: 0;
+        border-color: lightgray;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+        background-color: rgb(233, 233, 233);
+      }
+      .text {
+        width: 250px;
+        height: 32px;
+        font-size: 15px;
+        border: 0;
+        border-color: lightgray;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+        background-color: rgb(233, 233, 233);
+      }
+      .select {
+        width: 100px;
+        height: 32px;
+        font-size: 15px;
+        border: 1;
+        border-color: lightgrey;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+        background-color: rgb(164, 199, 255);
+      }
+      .btn {
+        width: 262px;
+        height: 32px;
+        font-size: 15px;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+        background-color: rgb(164, 199, 255);
+      }
+      .btn:active {
+        width: 262px;
+        height: 32px;
+        font-size: 15px;
+        border: 0;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+        background-color: rgb(61, 135, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="login.html">
+      <table>
+        <tr>
+          <td>
+            <h1><i class="fa-solid fa-user-plus"></i> 회원가입</h1>
+          </td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-user"></i> USER ID</td>
+        </tr>
+        <tr>
+          <td><input type="text" class="text" /></td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-lock"></i> PASSWORD</td>
+        </tr>
+        <tr>
+          <td><input type="password" class="text" /></td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-lock"></i> CONFIRM PASSWORD</td>
+        </tr>
+        <tr>
+          <td><input type="password" class="text" /></td>
+        </tr>
+        <tr>
+          <td><i class="fa-regular fa-envelope"></i> EMAIL</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" class="email" /> @
+            <select>
+              <option>naver.com</option>
+              <option>gmail.com</option>
+              <option>daum.net</option>
+              <option>nate.com</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-image"></i> IMAGE</td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="file"
+              class="real-upload"
+              accept="image/*"
+              required
+              multiple
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="submit"
+              value="회원가입"
+              class="btn"
+              onclick="alert('가입 성공!')"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

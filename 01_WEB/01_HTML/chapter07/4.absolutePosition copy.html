@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        /* background-color: pink; */
+        box-sizing: border-box;
+        margin: 0px;
+        /* display: grid;
+        place-items: center;
+        min-height: 100vh; */
+        /* 브라우저 화면크기만큼 body부분을 늘림
+        브라우저의 기본 magine값이 있기 때문에 100vh로
+        설정하면 스크롤이 생김. 96vh를 많이 쓴다고 하심. */
+        /* position: relative; */
+      }
+      #container {
+        /* width: 100vh; */
+        height: 100vh;
+        background-color: skyblue;
+        /* border-radius: 1rem; */
+        /* position: absolute; */
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        /* display: grid;
+        place-content: center; */
+        /* margin: auto; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        padding: 20px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>요소의 중앙 배치</h1>
+    </div>
+  </body>
+</html>
