@@ -12,7 +12,7 @@ import { reactive } from "vue";
 export default {
   name: "Calc3",
   setup() {
-    const state = reactive({ x: 10, y: 20, restult: 30 });
+    const state = reactive({ x: 10, y: 20, result: 30 });
 
     const calcAdd = () => {
       state.result = state.x + state.y;
