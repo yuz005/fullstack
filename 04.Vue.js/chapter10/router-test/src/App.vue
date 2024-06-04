@@ -4,6 +4,7 @@
     <router-view></router-view>
   </div>
 </template>
+
 <script>
 import Header from "@/components/Header.vue";
 export default {
@@ -11,6 +12,7 @@ export default {
   components: { Header },
 };
 </script>
+
 <style>
 .container {
   text-align: center;
