@@ -15,7 +15,8 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc //Mvx 활성화
 @ComponentScan(basePackages = {
         "org.scoula.controller",
-        "org.scoula.exception"
+        "org.scoula.exception",
+        "org.scoula.ex03.controller"
 })
 // Spring MVC용 컴포넌트 등록을 위한 스캔 패키지
 public class ServletConfig implements WebMvcConfigurer {
@@ -36,7 +37,8 @@ public class ServletConfig implements WebMvcConfigurer {
     }
     @Bean
     public MultipartResolver multipartResolver() {
-        StandardServletMultipartResolver resolver = new StandardServletMultipartResolver();
+        StandardServletMultipartResolver resolver
+                = new StandardServletMultipartResolver();
         return resolver;
     }
 }
